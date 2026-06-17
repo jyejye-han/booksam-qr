@@ -43,7 +43,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [imgError, setImgError] = useState(false);
 
-  const canSubmit = isValidEmail(email);
+  const canSubmit = email.trim().length > 0;
   const materials = tab === "teacher" ? TEACHER_MATERIALS : STUDENT_MATERIALS;
   const colLabel = tab === "teacher" ? "수업지원자료명" : "학습자료명";
 
