@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+:root {
+  --ybm-blue: #0057A8;
+  --ybm-blue-light: #E8F0FB;
+  --ybm-blue-dark: #003F7A;
+}
