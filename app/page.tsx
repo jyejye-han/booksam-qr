@@ -185,11 +185,10 @@ export default function Home() {
               </label>
               <button
                 onClick={handleSubmit}
-                disabled={!canSubmit || loading}
-                className="w-full py-3.5 rounded-lg text-sm font-bold text-white transition-all"
+                className="w-full py-3.5 rounded-lg text-sm font-bold text-white transition-all duration-200"
                 style={{
-                  backgroundColor: canSubmit ? YBM_BLUE : "#D1D5DB",
-                  cursor: canSubmit ? "pointer" : "not-allowed",
+                  backgroundColor: canSubmit && !loading ? YBM_BLUE : "#D1D5DB",
+                  cursor: canSubmit && !loading ? "pointer" : "not-allowed",
                 }}
               >
                 {loading ? "발송 중…" : "자료 발송하기"}
